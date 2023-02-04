@@ -715,7 +715,7 @@ ul {
 }
 
 .vr-games__slider__img > img {
-    width: 100%;
+    width: 250px;
     height: auto;
     border-radius: 10px;
     border: 1px solid transparent;
