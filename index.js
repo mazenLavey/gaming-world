@@ -67,7 +67,6 @@ function moveImg(imgCount) {
     moveSlider.style = `transform: translateX(-${(width * imgCount) + (imgCount * 25)}px)`;
     sliderTitle.textContent = `${sliderImgs[imgCount].alt}`;
     sliderP.textContent =`${sliderImgs[imgCount].dataset.info}`
-    console.log(sliderImgs[imgCount].dataset.info);
 }
 
 function toNext() {
@@ -190,3 +189,60 @@ window.addEventListener('click', (e)=>{
         }
     }
 });
+
+
+// swap marquee-group for mobile
+
+const marqueeSlider = document.querySelector('.marquee-group');
+const marqueeCards = document.querySelectorAll('.mini-games__card');
+
+let marqueeCardWidth = marqueeCards[0].offsetWidth;
+let cardCount = 0;
+let cardsNum = 8;
+
+marqueeCards.forEach((card)=>{
+    card.addEventListener('touchstart', (e)=>{
+        x1 = e.touches[0].clientX;
+        y1 = e.touches[0].clientY;
+    }, {passive: true});
+
+    card.addEventListener('touchmove', (e)=>{
+        if (x1 || y1) {
+            let x2 = e.touches[0].clientX;
+            let y2 = e.touches[0].clientY;
+            
+            let diffX = x2 - x1;
+            let difY = y2 - y1;
+        
+            if (Math.abs(diffX) > Math.abs(difY)) {
+                if (diffX > 0) {
+                    toPrevCard();
+                    
+        
+                } else if (diffX < 0) {
+                    toNextCard();
+                    
+                }
+            };
+        
+            x1 = null;
+            y1 = null;
+        }
+    }, {passive: true});
+})
+
+function toNextCard() {
+    cardCount++;
+    cardCount >= cardsNum? cardCount = 0: null;
+    moveCard(cardCount);
+}
+
+function toPrevCard() {
+    cardCount--;
+    cardCount < 0? cardCount = cardsNum -1 : null;
+    moveCard(cardCount);
+}
+
+function moveCard(cardCount) {
+    marqueeSlider.style = `transform: translateX(-${(marqueeCardWidth * cardCount) + (cardCount * 20)}px) !important`;
+}
