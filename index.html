@@ -915,11 +915,11 @@
         <section class="discount container" id="discount">
                 <div class="request-discount">
                     <h3>Request A Discount</h3>
-                    <form action="">
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Your Email">
-                        <input type="number" placeholder="Your Number">
-                        <textarea name="" id="" cols="30" rows="9" placeholder="Tell Us Your Needs"></textarea>
+                    <form action="#">
+                        <input type="text" name="userName" id="userName" min="3" max="50" placeholder="Your Name">
+                        <input type="email" name="userEmail" id="userEmail" placeholder="Your Email">
+                        <input type="number" name="userNumber" id="userNumber" minlength="11" placeholder="Your Number">
+                        <textarea name="userComment" id="userComment" cols="30" rows="9" placeholder="Tell Us Your Needs"></textarea>
                         <button type="submit">Send</button>
                     </form>
                 </div>
