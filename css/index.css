@@ -690,7 +690,6 @@ ul {
 }
 
 .vr-games__pragraph::first-letter {
-    font-size: 2rem;
     color: var(--elements-color);
 }
 

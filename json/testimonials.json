@@ -1,0 +1,83 @@
+
+
+
+[
+    {
+        "name": "User Name",
+        "profession": "Full Stack Developer",
+        "stars": 4,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus",
+        "img": {
+            "src": "images/avatar-01.webp",
+            "alt": "user review",
+            "width": "200",
+            "height": "200",
+            "loading": "lazy"
+        }
+    },
+    {
+        "name": "User Name",
+        "profession": "Unity Developer",
+        "stars": 5,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus",
+        "img": {
+            "src": "images/avatar-02.webp",
+            "alt": "user review",
+            "width": "200",
+            "height": "200",
+            "loading": "lazy"
+        }
+    },
+    {
+        "name": "User Name",
+        "profession": "Front-end Developer",
+        "stars": 4,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus",
+        "img": {
+            "src": "images/avatar-03.webp",
+            "alt": "user review",
+            "width": "200",
+            "height": "200",
+            "loading": "lazy"
+        }
+    },
+    {
+        "name": "User Name",
+        "profession": "C++ Developer",
+        "stars": 5,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus",
+        "img": {
+            "src": "images/avatar-04.webp",
+            "alt": "user review",
+            "width": "200",
+            "height": "200",
+            "loading": "lazy"
+        }
+    },
+    {
+        "name": "User Name",
+        "profession": "C# Developer",
+        "stars": 5,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus",
+        "img": {
+            "src": "images/avatar-05.webp",
+            "alt": "user review",
+            "width": "200",
+            "height": "200",
+            "loading": "lazy"
+        }
+    },
+    {
+        "name": "User Name",
+        "profession": "Investor",
+        "stars": 4,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus",
+        "img": {
+            "src": "images/avatar-06.webp",
+            "alt": "user review",
+            "width": "200",
+            "height": "200",
+            "loading": "lazy"
+        }
+    }
+]

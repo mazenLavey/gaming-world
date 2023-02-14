@@ -1,0 +1,93 @@
+
+
+
+[
+    {
+        "title": "Game Name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam eveniet cumque doloribus placeat iusto. Delectus sunt distinctio fugit iure inventore, neque maiores, enim aut rem unde blanditiis, eius ab.",
+        "link": "#",
+        "views": "90",
+        "likes": "25",
+        "img": {
+            "src": "images/game01.webp",
+            "alt": "game name",
+            "width": "600",
+            "height": " 337",
+            "loading": "lazy"
+        }
+    },
+    {
+        "title": "Game Name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam eveniet cumque doloribus placeat iusto. Delectus sunt distinctio fugit iure inventore, neque maiores, enim aut rem unde blanditiis, eius ab.",
+        "link": "#",
+        "views": "100",
+        "likes": "250",
+        "img": {
+            "src": "images/game02.webp",
+            "alt": "game name",
+            "width": "600",
+            "height": " 337",
+            "loading": "lazy"
+        }
+    },
+    {
+        "title": "Game Name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam eveniet cumque doloribus placeat iusto. Delectus sunt distinctio fugit iure inventore, neque maiores, enim aut rem unde blanditiis, eius ab.",
+        "link": "#",
+        "views": "20",
+        "likes": "155",
+        "img": {
+            "src": "images/game03.webp",
+            "alt": "game name",
+            "width": "600",
+            "height": " 337",
+            "loading": "lazy"
+        }
+    },
+    {
+        "title": "Game Name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam eveniet cumque doloribus placeat iusto. Delectus sunt distinctio fugit iure inventore, neque maiores, enim aut rem unde blanditiis, eius ab.",
+        "link": "#",
+        "views": "40",
+        "likes": "425",
+        "img": {
+            "src": "images/game04.webp",
+            "alt": "game name",
+            "width": "600",
+            "height": " 337",
+            "loading": "lazy"
+        }
+    },
+    {
+        "title": "Game Name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam eveniet cumque doloribus placeat iusto. Delectus sunt distinctio fugit iure inventore, neque maiores, enim aut rem unde blanditiis, eius ab.",
+        "link": "#",
+        "views": "200",
+        "likes": "35",
+        "img": {
+            "src": "images/game05.webp",
+            "alt": "game name",
+            "width": "600",
+            "height": " 337",
+            "loading": "lazy"
+        }
+    },
+    {
+        "title": "Game Name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam eveniet cumque doloribus placeat iusto. Delectus sunt distinctio fugit iure inventore, neque maiores, enim aut rem unde blanditiis, eius ab.",
+        "link": "#",
+        "views": "700",
+        "likes": "55",
+        "img": {
+            "src": "images/game06.webp",
+            "alt": "game name",
+            "width": "600",
+            "height": " 337",
+            "loading": "lazy"
+        }
+    }
+]
+
+
+
+

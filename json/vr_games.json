@@ -1,0 +1,123 @@
+
+
+
+[
+    {
+        "title": "Popular VR Games",
+        "description": "Here you can find fresh news about all new VR games released this year",
+        "img": {
+            "src": "images/vr00.webp",
+            "alt": "Popular VR Games",
+            "width": "750",
+            "height": "450",
+            "srcset": "images/vr00_small.webp 270w",
+            "num": 0,
+            "active": true
+        }
+    },
+    {
+        "title": "valkyrie",
+        "description": "The latest title in the VALKYRIE series is finally here! This action RPG incorporates the series' signature Einherjar and combo systems, allowing players to enjoy speedy, three-dimensional combat. The game's unique art style beautifully depicts a collapsing world as Ragnarok looms, with series veteran Motoi Sakuraba returning to enrich the title with an unforgettable soundtrack.",
+        "img": {
+            "src": "images/vr01.webp",
+            "alt": "valkyrie",
+            "width": "1200",
+            "height": "720",
+            "srcset": "images/vr01_small.webp 270w",
+            "num": 1,
+            "active": false
+        }
+    },
+    {
+        "title": "marvel powers united",
+        "description": "It feels like a sequence of fights ripped right from the pages of a comic book. Players initially choose between Captain America and Black Widow to explore the streets of New York City, which is suddenly invaded by a wide number of enemies. Out of nowhere, the twisted terrorists of Hydra, the war-like Kree empire, and Ultron's army of robots launch an all-out attack on the citizens of the Big Apple trying to cause as much damage as possible.",
+        "img": {
+            "src": "images/vr02.webp",
+            "alt": "marvel powers united",
+            "width": "1200",
+            "height": "720",
+            "srcset": "images/vr02_small.webp 270w",
+            "num": 2,
+            "active": false
+        }
+    },
+    {
+        "title": "beat saber",
+        "description": "Beat Saber is a virtual reality rhythm game developed and published by Czech game developer Beat Games. It takes place in a surrealistic neon environment and features the player slicing blocks representing musical beats with a pair of contrasting-colored sabers.",
+        "img": {
+            "src": "images/vr03.webp",
+            "alt": "beat saber",
+            "width": "1200",
+            "height": "720",
+            "srcset": "images/vr03_small.webp 270w",
+            "num": 3,
+            "active": false
+        }
+    },
+    {
+        "title": "skyrim",
+        "description": "The Elder Scrolls V: Skyrim is an action role-playing game, playable from either a first- or third-person perspective. The player may freely roam over the land of Skyrim, an open world environment consisting of wilderness expanses, dungeons, caves, cities, towns, fortresses, and villages.",
+        "img": {
+            "src": "images/vr04.webp",
+            "alt": "skyrim",
+            "width": "1200",
+            "height": "720",
+            "srcset": "images/vr04_small.webp 270w",
+            "num": 4,
+            "active": false
+        }
+    },
+    {
+        "title": "batman: arkham",
+        "description": "In the main storyline, Batman must once again stop his archenemy, the Joker, who has instigated an elaborate plot to seize control of Arkham and trap Batman on the island, while threatening Gotham City with hidden bombs.",
+        "img": {
+            "src": "images/vr05.webp",
+            "alt": "batman: arkham",
+            "width": "1200",
+            "height": "720",
+            "srcset": "images/vr05_small.webp 270w",
+            "num": 5,
+            "active": false
+        }
+    },
+    {
+        "title": "pocket tactics",
+        "description": "Pocket-Tactics is a 3d print-and-play strategy boardgame in which fantasy forces battle for control of a hex tile-based map. The game is fast-paced (most games lasting between 10-30 minutes), designed for ease of printing, and the entire game is small enough to fit in your pocket.",
+        "img": {
+            "src": "images/vr06.webp",
+            "alt": "pocket tactics",
+            "width": "1200",
+            "height": "720",
+            "srcset": "images/vr06_small.webp 270w",
+            "num": 6,
+            "active": false
+        }
+    },
+    {
+        "title": "resident evil 4",
+        "description": "Special agent Leon S. Kennedy is sent on a mission to rescue the U.S. President's daughter who has been kidnapped. Finding his way to a rural village in Europe, he faces new threats that are a departure from the traditional lumbering zombie enemies of the earlier instalments in the series.",
+        "img": {
+            "src": "images/vr07.webp",
+            "alt": "resident evil 4",
+            "width": "1200",
+            "height": "720",
+            "srcset": "images/vr07_small.webp 270w",
+            "num": 7,
+            "active": false
+        }
+    },
+    {
+        "title": "left 4 dead",
+        "description": "Set in a modern day survival-horror universe, the co-operative gameplay of Left 4 Dead (L4D) casts four 'Survivors' in an epic struggle against hordes of swarming zombies and terrifying 'Boss Infected' mutants.",
+        "img": {
+            "src": "images/vr08.webp",
+            "alt": "left 4 dead",
+            "width": "1200",
+            "height": "720",
+            "srcset": "images/vr08_small.webp 270w",
+            "num": 8,
+            "active": false
+        }
+    }
+    
+]
