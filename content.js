@@ -92,11 +92,14 @@ fetch("json/mini_games.json").then(res => res.json()).then((data)=>{
         `);
     });
 }).finally(()=>{
+    // swape settings for slider
     const miniGamesSliderWrapper = document.querySelector('.marquee-wrapper');
     const miniGamesSlider = document.querySelector('.marquee-group');
     let startX;
     let isPressed = false;
     let sliderWidth = miniGamesSlider.offsetWidth - miniGamesSliderWrapper.offsetWidth;
+    let x1MiniGames;
+    let y1MiniGames;
 
     const moveMiniGamesSlider = (moveTo)=>{
         if (moveTo > 0) {
@@ -104,7 +107,6 @@ fetch("json/mini_games.json").then(res => res.json()).then((data)=>{
         } else if (-moveTo > sliderWidth) {
             moveTo = -sliderWidth;
         };
-
         miniGamesSlider.style.left = `${moveTo}px`
     }
 
@@ -115,16 +117,30 @@ fetch("json/mini_games.json").then(res => res.json()).then((data)=>{
 
     miniGamesSliderWrapper.addEventListener('touchstart', (e)=>{
         isPressed = true;
+        x1MiniGames = e.touches[0].clientX;
+        y1MiniGames = e.touches[0].clientY;
         startX = e.touches[0].pageX - miniGamesSlider.offsetLeft;
     });
-
-    miniGamesSliderWrapper.addEventListener('touchmove', (e)=>{
-        if(!isPressed) return;
-        e.preventDefault();
-        let moveTo = e.touches[0].pageX - startX;
-        moveMiniGamesSlider(moveTo);
-    });
     
+    miniGamesSliderWrapper.addEventListener('touchmove', (e)=>{
+        if (x1MiniGames || y1MiniGames) {
+            let x2MiniGames = e.touches[0].clientX;
+            let y2MiniGames = e.touches[0].clientY;
+            
+            let diffX = x2MiniGames - x1MiniGames;
+            let difY = y2MiniGames - y1MiniGames;
+        
+            if (Math.abs(diffX) > Math.abs(difY)) {
+                if(!isPressed) return;
+                e.preventDefault();
+                let moveTo = e.touches[0].pageX - startX;
+                moveMiniGamesSlider(moveTo);
+            };
+            x1 = null;
+            y1 = null;
+        };
+    });
+
     miniGamesSliderWrapper.addEventListener('touchend', ()=> isPressed = false);
 });
 
@@ -150,7 +166,4 @@ fetch("json/testimonials.json").then(res => res.json()).then((data)=>{
         `)
     });
 });
-
-
-
 
