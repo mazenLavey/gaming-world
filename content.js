@@ -71,7 +71,8 @@ fetch("json/mini_games.json").then(res => res.json()).then((data)=>{
                 <a href=${element.link}>Play Now</a>
             </div>
         </div>
-        `)
+        `);
+        
         marqueeSliderDuplicate.insertAdjacentHTML("beforeend", `
         <div class="mini-games__card">
             <div class="card__upper">
@@ -88,63 +89,43 @@ fetch("json/mini_games.json").then(res => res.json()).then((data)=>{
                 <a href=${element.link}>Play Now</a>
             </div>
         </div>
-        `)
+        `);
     });
 }).finally(()=>{
-    // swap marquee-group for mobile
-    
-    const marqueeCards = document.querySelectorAll('.mini-games__card');
-    
-    let marqueeCardWidth = marqueeCards[0].offsetWidth;
-    let cardCount = 0;
-    let cardsNum = 8;
-    
-    marqueeCards.forEach((card)=>{
-        card.addEventListener('touchstart', (e)=>{
-            x1 = e.touches[0].clientX;
-            y1 = e.touches[0].clientY;
-        }, {passive: true});
-    
-        card.addEventListener('touchmove', (e)=>{
-            if (x1 || y1) {
-                let x2 = e.touches[0].clientX;
-                let y2 = e.touches[0].clientY;
-                
-                let diffX = x2 - x1;
-                let difY = y2 - y1;
-            
-                if (Math.abs(diffX) > Math.abs(difY)) {
-                    if (diffX > 0) {
-                        toPrevCard();
-                        
-            
-                    } else if (diffX < 0) {
-                        toNextCard();
-                        
-                    }
-                };
-            
-                x1 = null;
-                y1 = null;
-            }
-        }, {passive: true});
+    const miniGamesSliderWrapper = document.querySelector('.marquee-wrapper');
+    const miniGamesSlider = document.querySelector('.marquee-group');
+    let startX;
+    let isPressed = false;
+    let sliderWidth = miniGamesSlider.offsetWidth - miniGamesSliderWrapper.offsetWidth;
+
+    const moveMiniGamesSlider = (moveTo)=>{
+        if (moveTo > 0) {
+            moveTo = 0;
+        } else if (-moveTo > sliderWidth) {
+            moveTo = -sliderWidth;
+        };
+
+        miniGamesSlider.style.left = `${moveTo}px`
+    }
+
+    window.addEventListener('resize', ()=>{
+        sliderWidth = miniGamesSlider.offsetWidth - miniGamesSliderWrapper.offsetWidth;
+        moveMiniGamesSlider(0);
     })
+
+    miniGamesSliderWrapper.addEventListener('touchstart', (e)=>{
+        isPressed = true;
+        startX = e.touches[0].pageX - miniGamesSlider.offsetLeft;
+    });
+
+    miniGamesSliderWrapper.addEventListener('touchmove', (e)=>{
+        if(!isPressed) return;
+        e.preventDefault();
+        let moveTo = e.touches[0].pageX - startX;
+        moveMiniGamesSlider(moveTo);
+    });
     
-    function toNextCard() {
-        cardCount++;
-        cardCount >= cardsNum? cardCount = 0: null;
-        moveCard(cardCount);
-    }
-    
-    function toPrevCard() {
-        cardCount--;
-        cardCount < 0? cardCount = cardsNum -1 : null;
-        moveCard(cardCount);
-    }
-    
-    function moveCard(cardCount) {
-        marqueeSlider.style = `transform: translateX(-${(marqueeCardWidth * cardCount) + (cardCount * 20)}px) !important`;
-    }
+    miniGamesSliderWrapper.addEventListener('touchend', ()=> isPressed = false);
 });
 
 

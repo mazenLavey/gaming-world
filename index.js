@@ -42,7 +42,7 @@ window.addEventListener('scroll', ()=>{
 });
 
 
-// slider
+// VR Games slider
 
 const sliderBg = document.querySelector('.vr-games');
 const moveSlider = document.querySelector('.vr-games__slider__img');
@@ -154,6 +154,8 @@ fetch("json/vr_games.json").then(res=> res.json()).then(data => {
             }, {passive: true});
         })
     });
+
+    
 // counter
 
 let count = document.querySelectorAll('.count');
